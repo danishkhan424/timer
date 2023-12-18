@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer</title>
+    <link rel="icon" href="https://api.iconify.design/oi/timer.svg?color=tan" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="timer">
+      <h2>Timer</h2>
+      <div class="input-container">
+        <div>
+          <input type="number" id="hour" placeholder="00" /><span class="time"
+            >hour</span
+          >
+        </div>
+        :
+        <div>
+          <input type="number" id="mins" placeholder="00" /><span class="time"
+            >min</span
+          >
+        </div>
+        :
+        <div>
+          <input type="number" id="secs" placeholder="00" /><span class="time"
+            >sec</span
+          >
+        </div>
+      </div>
+      <div>
+        <img
+          class="info-icon"
+          onmouseenter="showIns()"
+          onmouseout="hideIns()"
+          src="https://api.iconify.design/mdi/information-outline.svg?color=red"
+          placeholder="Enter time in HH:MM:SS format, use 00 for hours if none."
+          alt=""
+        />
+      </div>
+      <div class="ins-Container">
+        <p class="instruction">
+          Enter time in HH:MM:SS format, use 00 for hours if none.
+        </p>
+      </div>
+      <div id="buttons">
+        <button id="stop" value="stop">Stop</button
+        ><button id="start">Start</button><button id="reset">Reset</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
